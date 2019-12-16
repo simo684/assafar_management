@@ -25,7 +25,7 @@ namespace GestionDeStock.PL
             }
             if (txtel_fr.Text == "" || txtel_fr.Text == "TEL FOURNISSEUR")
             {
-                return "entrer teleph fournisseur";
+                return "entrer telephone du fournisseur";
             }
 
             else return null;
