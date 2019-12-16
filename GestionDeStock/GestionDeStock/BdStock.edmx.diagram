@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d7075418e7164719ad602ce63257dd2e" Name="Diagram1">
+        <EntityTypeShape EntityType="gestion_venteModel.achat" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="gestion_venteModel.categorie" Width="1.5" PointX="0.75" PointY="5" />
+        <EntityTypeShape EntityType="gestion_venteModel.client" Width="1.5" PointX="3.75" PointY="8.5" />
+        <EntityTypeShape EntityType="gestion_venteModel.detail_achat" Width="1.5" PointX="5.25" PointY="4.375" />
+        <EntityTypeShape EntityType="gestion_venteModel.fournisseur" Width="1.5" PointX="0.75" PointY="2.375" />
+        <EntityTypeShape EntityType="gestion_venteModel.produit" Width="1.5" PointX="3" PointY="4.5" />
+        <EntityTypeShape EntityType="gestion_venteModel.utilisateur" Width="1.5" PointX="5.75" PointY="2.125" />
+        <EntityTypeShape EntityType="gestion_venteModel.vente" Width="1.5" PointX="6" PointY="8.5" />
+        <EntityTypeShape EntityType="gestion_venteModel.vente_detail" Width="1.5" PointX="8.25" PointY="4.375" />
+        <AssociationConnector Association="gestion_venteModel.FK_achat_fournisseur" />
+        <AssociationConnector Association="gestion_venteModel.FK_detail_achat_achat" />
+        <AssociationConnector Association="gestion_venteModel.FK_produit_categorie" />
+        <AssociationConnector Association="gestion_venteModel.FK_vente_client" />
+        <AssociationConnector Association="gestion_venteModel.FK_detail_achat_produit" />
+        <AssociationConnector Association="gestion_venteModel.FK_vente_detail_produit" />
+        <AssociationConnector Association="gestion_venteModel.FK_vente_detail_vente" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
